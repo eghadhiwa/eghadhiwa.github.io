@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CovidCare</title>
+</head>
+<body class="bodyform">
+    <div class="header">
+        <div class="header-logo"> <a href="index.html">Covid<span>Care</span></a> </div>
+        <div class="header-list">
+            <ul>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form-content">
+        <div id="formdata">
+        <h2>Silahkan Isi Form</h2>
+        <div class="form-swab" id="form1">
+            <form id="buttonsubmit">
+                <label for="nama"> Nama Lengkap :</label><br><br>
+                <input type="text" id="nama" name="nama" class="bidu"required><br> <br>
+
+                <label for="ttl"> Tanggal Lahir :</label><br><br>
+                <input type="date" name="ttl" id="ttl" class="bidu"required><br><br>
+
+                <label for="umur">Umur :</label><br><br>
+                <input type="number" name="umur" id="umur" class="bidu"required><br> <br>
+
+                <label >Jenis Kelamin :</label>
+                <p><input type="radio" name="gender" id="gender" value="pria" required>Pria</p>
+                <p><input type="radio" name="gender" id="gender" value="Wanita"required>Wanita</p><br><br>
+
+                <label for="alamat"> Alamat :</label><br><br>
+                <textarea name="alamat" id="alamat" cols="40" rows="5" required></textarea><br><br>
+
+                <label for="gejala"> Gejala/Keluhan :</label><br><br>
+                <textarea name="gejala" id="gejala" cols="40" rows="5" ></textarea><br><br>
+
+                <label for="metode">Pilih Pemeriksaan :</label>
+                <select name="metode" id="metode" required>
+                    <option value="">----Pilih----</option>
+                    <option value="swab">Swab Test</option>
+                    <option value="rapid">Rapid Test</option>
+                </select><br><br>
+                
+                <button  id="buttonsubmit" type="submit" >click</button>
+            </form>
+        </div>
+    </div>
+    <div class="data" id="data-user">
+        <h4>Konfirmasi Data</h4>
+        <h3 id="dataPasien"></h3>
+        <h3 id="tanggal"></h3>
+        <h3 id="age"></h3>
+        <h3 id="jeniskelamin"></h3>
+        <h3 id="address"></h3>
+        <h3 id="keluhan"></h3>
+        <h3 id="tipe"></h3>
+
+        <form class="form2" action="data.html">
+            <input type="submit" value="Confirm">
+        </form>
+        
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">Covid<span>Care</span></div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="dom.js"> </script>
+</body>
+</html>
